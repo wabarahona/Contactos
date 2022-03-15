@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Contactos.Views.PageUsuarios"
+    Title="Bienvenido al Sistema de Registro"
+    Background="AliceBlue">
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button ImageSource="CrearRegistro.png"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BorderWidth="1"
+                    Scale=".3"
+                    x:Name="btnVer"
+                    Clicked="btnVer_Clicked"
+                    > </Button>
+            <Label Text="Ver Usuarios Registrados" Margin="130,-160,40,0" FontSize="16">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>  
+                </Label>
+            <Label TextColor="BLUE" Text="PARA AGREGAR, MODIFICA O BORRAR, ENTRAR COMO ADMINISTRADOR" FontSize="10"
+                       HorizontalOptions="Center"
+                       Margin="30,170,30,30"
+                       ></Label>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

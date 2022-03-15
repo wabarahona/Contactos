@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:x1="clr-namespace:System.Drawing;assembly=netstandard"
+    x:Class="Contactos.Views.CrearRegistro" 
+    Background="#7FB3D5">
+
+    <ContentPage.Content>
+        <StackLayout>
+              
+              <Label Text="ID de Usuario" ></Label>
+            <Entry Keyboard="Numeric"
+                   x:Name="ID" >
+                
+            </Entry>
+            <Label Text="Nombre"></Label>
+            <Entry Keyboard="Text"
+                   x:Name="Nombre">
+
+            </Entry>
+            <Label Text="Apellido"></Label>
+            <Entry Keyboard="Text"
+                   x:Name="Apellido">
+
+            </Entry>
+
+            <Label Text="Edad"></Label>
+            <Entry Keyboard="Text"
+
+                   x:Name="Edad">
+
+            </Entry>
+            <Label Text="Pais                                       Telefono"></Label> 
+            <Picker  Title="- - - Pais - - -" Margin="0,0,260,0" x:Name="PickerValue"   >
+                <Picker.Items >
+                    <x:String>Belice (501)</x:String>
+                    <x:String>Guatemala (502)</x:String>
+                    <x:String>El Salvador (503)</x:String>
+                    <x:String>Honduras (504)</x:String>
+                    <x:String>Nicaragua (505)</x:String>
+                    <x:String>Costa Rica (506)</x:String>
+                    <x:String>Panama (507)</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry Keyboard="Numeric" Margin="155,-51,0,0"></Entry>
+            <Label Text="Nota:"></Label>
+           <Editor AutoSize="TextChanges" TextColor="White" BackgroundColor="#E67E22" x:Name="Nota" Text="{Binding Text}" ></Editor>
+
+            <Button CornerRadius="20" BackgroundColor="#58D68D" BorderWidth="2" Margin="15,20,15,0" Text="SALVAR CONTACTO" BorderColor="Blue"
+                    FontAttributes="Bold" Clicked="Button_Clicked" >
+                <Button.GestureRecognizers>
+                    <ClickGestureRecognizer Clicked="ClickGestureRecognizer_Clicked"> </ClickGestureRecognizer>
+                </Button.GestureRecognizers>
+
+            </Button>
+
+          
+
+        </StackLayout>
+       
+
+    </ContentPage.Content>
+</ContentPage>

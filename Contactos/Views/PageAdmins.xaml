@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Contactos.Views.PageAdmin"
+    Title="AREA DE ADMINISTRADORES">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button ImageSource="CrearUsuario.png"
+                    Scale=".1"
+                    Margin="-220,-380,40,0"
+                    Background="transparent"
+                    Clicked="Button_Clicked"></Button>
+
+            <Button ImageSource="updateuser.png"
+                    Scale=".08"
+                    Margin="-240,-920,40,0"
+                    Background="transparent"
+                    Clicked="Button_Clicked_1"></Button>
+            <Button ImageSource="DeleteUser.png"
+                    Scale=".4"
+                    Margin="-220,-510,40,0"
+                    Background="transparent"
+                    Clicked="Button_Clicked_2"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
